@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Climate Solutions</title>
+
+    <!-- Tailwind + DaisyUI via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@3.8.0"></script>
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-sm px-6">
+      <div class="flex-1">
+        <a href="/" class="text-xl font-semibold">Climate Solutions</a>
+      </div>
+      <div class="flex gap-4">
+        <a class="btn btn-ghost btn-sm active" href="/about">About</a>
+        <div class="dropdown dropdown-hover">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-sm">Sector</div>
+          <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
+            <li><a href="/solutions/projects?sector=energy">Energy</a></li>
+            <li><a href="/solutions/projects?sector=transportation">Transportation</a></li>
+            <li><a href="/solutions/projects?sector=industry">Industry</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <main class="max-w-3xl mx-auto text-center py-16 px-4">
+      <img
+        src="https://via.placeholder.com/160"
+        alt="Profile Photo"
+        class="mx-auto rounded-full shadow-md mb-6"
+      />
+
+      <h1 class="text-4xl font-bold mb-2">Hi, I'm Reejan 👋</h1>
+      <p class="text-lg text-gray-600 mb-6">
+        I’m a Computer Programming student with a passion for tech and the environment.  
+        I enjoy working on real-world problems using software and exploring tools like Node.js, React, and Tailwind CSS.
+      </p>
+
+      <p class="text-gray-500">
+        Outside of coding, I love gaming, anime, and learning new skills that help me grow personally and professionally.
+      </p>
+    </main>
+
+  </body>
+</html>
