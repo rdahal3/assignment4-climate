@@ -6,7 +6,7 @@
 *  https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
 * 
 *  Name: Reejan Dahal  Student ID: 15672224  Date: 2025-06-15
-*  Hosted URL: [ADD YOUR VERCEL LINK HERE BEFORE SUBMITTING]
+* Hosted URL: https://assignment-3-rjg8.vercel.app
 ********************************************************************************/
 
 const express = require("express");
