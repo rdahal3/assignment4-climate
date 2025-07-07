@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Projects - Climate Solutions</title>
+
+  <!-- Tailwind + DaisyUI via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daisyui@3.8.0"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar Partial -->
+  <%- include("partials/navbar", { page: "projects" }) %>
+
+  <!-- Page Heading -->
+  <section class="container mx-auto text-center py-10 px-4">
+    <h1 class="text-4xl font-bold mb-2">All Climate Solution Projects</h1>
+    <p class="text-lg text-gray-600">Browse through real-world projects contributing to sustainability.</p>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 pb-16">
+    <% projects.forEach(project => { %>
+      <div class="card bg-base-100 shadow-md">
+        <figure>
+          <img src="<%= project.imageUrl %>" alt="<%= project.sector %>" class="h-48 w-full object-cover" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title"><%= project.title %></h2>
+          <p><%= project.description %></p>
+          <div class="card-actions justify-end">
+            <a href="/solutions/projects/<%= project.id %>" class="btn btn-outline btn-sm">View Project</a>
+          </div>
+        </div>
+      </div>
+    <% }); %>
+  </section>
+
+</body>
+</html>
